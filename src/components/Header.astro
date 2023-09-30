@@ -1,0 +1,159 @@
+---
+
+---
+
+<header>
+    <figure class="header__figure">
+        <img class="img--large" src="/catering-logo.webp" alt="logo">
+    </figure>
+    <nav class="nav--desktop">
+        <ul class="list--reset flex--rownowrap nav--desktop__list">
+            <li>
+                <a class="link--reset color--black" href="/">Inicio</a>
+            </li>
+            <li>
+                <div class="icon--container">
+                    <a class="link--reset color--black" href="/servicios">Servicios</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M6 9l6 6l6 -6"></path>
+                     </svg>
+                     <ul class="list--reset nav--desktop__sublist">
+                        <li>
+                            <a class="link--reset sublist__link" href="/servicios">Organización de Eventos Sociales</a>
+                        </li>
+                        <li>
+                            <a class="link--reset sublist__link" href="/servicios">Organización de Eventos Corporativos</a>
+                        </li>
+                        <li>
+                            <a class="link--reset sublist__link" href="/servicios">Catering</a>
+                        </li>
+                        <li>
+                            <a class="link--reset sublist__link" href="/servicios">Rider y Montaje de Conciertos </a>
+                        </li>
+                    </ul>    
+                </div>
+              
+            </li>
+            <li>
+                <a class="link--reset color--black" href="/meraki">Meraki Brunch & Events</a>
+            </li>
+            <li>
+                <a class="link--reset color--black" href="/cotiza">Cotiza</a>
+            </li>
+            <li>
+                <a class="link--reset color--black" href="/contacto">Contacto</a>
+            </li>
+        </ul>
+        <ul class="list--reset flex--rownowrap nav--desktop__icons">
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                     </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
+                     </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="nav--mobile">
+        <ul>
+
+        </ul>
+        <ul>
+
+        </ul>
+    </nav>
+</header>
+<style>
+    header{
+        height: 12rem;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+    .header__figure{
+        width: clamp(15rem,30%, 16rem);
+    }
+    .nav--desktop{
+        width: 70%;
+        font-size: 1.8rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+    .nav--desktop__list{
+        height: 100%;
+        align-items: center;
+        gap: 4rem;
+        position: relative;
+    }
+    .nav--desktop__list li:hover{
+        border-bottom: 1px solid var(--black);
+        transition: all 0.3s ease-in-out;
+    }
+    .nav--desktop__icons{
+        height: 100%;
+        align-items: center;
+        gap: 3rem;
+    }
+    .nav--desktop__sublist{
+        display: none;   
+        transition: all 0.3s ease-in-out;
+    }
+    .nav--mobile{
+        display: none;
+    }
+    .icon{
+        color: var(--black);
+        width: 3rem;
+        cursor: pointer;
+    }
+    .icon--container{
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .icon--container:hover  .nav--desktop__sublist{
+        display: inline-block;
+        padding: 1rem 0;
+        position: absolute;
+        bottom: -20rem;
+        background-color: var(--black);
+    }
+    .sublist__link{
+        width: 100%;
+        height: 5rem;
+        padding: 0 1.5rem;
+        display: flex;
+        align-items: center;
+        color: var(--white);
+    }
+    .sublist__link:hover{   
+        background-color: var(--white);
+        color: var(--black); 
+        transition: all 0.3s ease-in-out;
+    }
+</style>

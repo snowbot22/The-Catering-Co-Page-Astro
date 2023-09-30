@@ -1,0 +1,151 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contáctanos">
+  <main>
+    <article class="text">
+      <section class="text__head">
+        <h1 class="text__title">Contáctanos</h1>
+        <p class="text__p">
+          Aquí encontrarás toda nuestra información de contacto, estaremos
+          encantados de atenderte.
+        </p>
+      </section>
+      <ul class="list--reset text__list">
+        <li>
+          <h2 class="text__list__title">Número de Teléfono:</h2>
+          <p class="text__list__p">+593 98 255 5079</p>
+        </li>
+        <li>
+          <h2 class="text__list__title">Correo Electrónico:</h2>
+          <p class="text__list__p">thecatering.co@outlook.com</p>
+        </li>
+        <li>
+          <h2 class="text__list__title">Redes Sociales:</h2>
+          <p class="text__list__p">
+            Si deseas contactarnos por redes sociales, puedes hacerlo a través
+            de estos enlaces. Nos contactaremos contigo lo más pronto posible.
+          </p>
+          <div class="text__list__social">
+            <button class="button button--icon">
+              <figure>
+                <img
+                  class="img--large"
+                  src="/facebook-svgrepo-com.svg"
+                  alt="facebook-icon"
+                />
+              </figure>
+               Facebook</button
+            >
+            <button class="button button--icon">
+              <figure>
+                <img
+                  class="img--large"
+                  src="/instagram-svgrepo-com (1).svg"
+                  alt="instagram-icon"
+                />
+              </figure>
+               Instagram
+            </button>
+            <button class="button button--icon">
+              <figure>
+                <img
+                  class="img--large"
+                  src="/whatsapp-128-svgrepo-com.svg"
+                  alt="whatsapp-icon"
+                />
+              </figure>
+               WhatsApp</button
+            >
+          </div>
+        </li>
+      </ul>
+    </article>
+    <iframe
+      src="https://www.youtube.com/embed/fTWKxUArC-I?si=YPjur0vqq92k9C5o"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    >
+    </iframe>
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .text {
+    width: clamp(55rem, 45%, 65rem);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+  .text__head {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .text__title {
+    padding-bottom: 1rem;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    border-bottom: 3px solid var(--black);
+    width: clamp(30rem, 50%, 40rem);
+  }
+  .text__p {
+    line-height: 3.2rem;
+  }
+  .text__list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+  }
+  .text__list__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-family: var(--heading-font);
+  }
+  .text__list__p {
+    line-height: 2.2rem;
+  }
+  .text__list__social {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .button--icon {
+    width: 15rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .button--icon figure {
+    width: 2rem;
+    height: 2rem;
+  }
+  .button--icon:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  iframe {
+    width: 40%;
+    height: 30rem;
+  }
+</style>

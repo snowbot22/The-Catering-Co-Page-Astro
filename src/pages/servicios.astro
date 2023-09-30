@@ -1,0 +1,217 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Servicios The Catering Co">
+  <article class="intro flex--colnowrap">
+    <figure class="intro__banner">
+      <img
+        class="img--large img--cover"
+        src="/banner--servicios.jpg"
+        alt="servicios-banner"
+      />
+    </figure>
+    <section class="intro__text flex--colnowrap">
+      <h1 class="intro__title title">Nuestros Servicios</h1>
+      <p class="intro__p">
+        En the Catering Co. llevamos más de 10 años organizando eventos sociales
+        y empresariales, ofreciendo un servicio integral de catering,
+        ambientación y organización de eventos. Nos especializamos en brindarte
+        un servicio personalizado, adaptándonos a tus necesidades y gustos, para
+        que puedas disfrutar de tu evento sin preocupaciones.
+      </p>
+    </section>
+  </article>
+  <article class="container">
+    <article class="card flex--rownowrap">
+      <figure class="card__figure">
+        <img
+          class="img--large img--cover"
+          src="/slider-1.jpg"
+          alt="foto-eventos-sociales"
+        />
+      </figure>
+      <section class="card__text flex--colnowrap">
+        <h2 class="title card__title">Organización de Eventos Sociales</h2>
+        <p class="card__p">
+          Desde la organización integral de tu evento, hasta el catering y
+          ambientación, te acompañamos en cada momento para que puedas disfrutar
+          de tu evento sin preocupaciones.
+        </p>
+        <button class="button card__button">
+          <a class="link--reset card__link" href="/cotiza"> Cotizar</a>
+        </button>
+      </section>
+    </article>
+    <article class="card flex--rownowrap">
+      <figure class="card__figure">
+        <img
+          class="img--large img--cover"
+          src="/slider-1.jpg"
+          alt="foto-eventos-sociales"
+        />
+      </figure>
+      <section class="card__text flex--colnowrap">
+        <h2 class="card__title title">Organización de Eventos Empresariales</h2>
+        <p class="card__p">
+          Organizamos tu evento empresarial, para que puedas disfrutarlo y
+          lograr tus objetivos.
+        </p>
+        <button class="button card__button">
+          <a class="link--reset card__link" href="/cotiza"> Cotizar</a>
+        </button>
+      </section>
+    </article>
+    <article class="card flex--rownowrap">
+      <figure class="card__figure">
+        <img
+          class="img--large img--cover"
+          src="/slider-1.jpg"
+          alt="foto-eventos-sociales"
+        />
+      </figure>
+      <section class="card__text flex--colnowrap">
+        <h2 class="title card__title">Servicio de Catering</h2>
+        <p class="card__p">
+          Brindamos un servicio de catering de excelencia, con la mejor calidad
+          y atención personalizada.
+        </p>
+        <button class="button card__button">
+          <a class="link--reset card__link" href="/cotiza"> Cotizar</a>
+        </button>
+      </section>
+    </article>
+    <article class="card flex--rownowrap">
+      <figure class="card__figure">
+        <img
+          class="img--large img--cover"
+          src="/slider-1.jpg"
+          alt="foto-eventos-sociales"
+        />
+      </figure>
+      <section class="card__text flex--colnowrap">
+        <h2 class="title card__title">Wedding Planner</h2>
+        <p class="card__p">
+          Te acompañamos en la organización de tu casamiento, para que puedas
+          disfrutar de cada momento.
+        </p>
+        <button class="button card__button">
+          <a class="link--reset card__link" href="/cotiza"> Cotizar</a>
+        </button>
+      </section>
+    </article>
+    <article class="card flex--rownowrap">
+      <figure class="card__figure">
+        <img
+          class="img--large img--cover"
+          src="/slider-1.jpg"
+          alt="foto-eventos-sociales"
+        />
+      </figure>
+      <section class="card__text flex--colnowrap">
+        <h2 class="title card__title">Rider y Catering de Conciertos</h2>
+        <p class="card__p">
+          Organizamos el catering de tu concierto, para que puedas disfrutarlo y
+          lograr tus objetivos.
+        </p>
+        <button class="button card__button">
+          <a class="link--reset card__link" href="/cotiza"> Cotizar</a>
+        </button>
+      </section>
+    </article>
+  </article>
+
+  <article>
+    <h2>En todo lugar y momento</h2>
+    <p>
+      Nos adaptamos a tus necesidades, para que puedas disfrutar de nuestros
+      servicios en todo lugar y momento.
+    </p>
+  </article>
+</Layout>
+
+<style>
+  .intro {
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 4rem;
+  }
+  .intro__banner {
+    width: 100%;
+    height: 30rem;
+  }
+  .intro__text {
+    width: 80%;
+    max-width: 130rem;
+    gap: 2rem;
+  }
+  .intro__title {
+    width: max-content;
+    font-size: 4rem;
+    border-bottom: 2px solid var(--black);
+    padding: 0 3rem 0.4rem 0rem;
+  }
+  .intro__p {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .container{
+    padding: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+  }
+  .card {
+    width: max-content;
+    padding: 4rem 0;
+    height: 50rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-shrink: 1;
+  }
+  .card__text {
+    width: 25rem;
+    height: 100%;
+    gap: 1.8rem;
+  }
+  .card__figure {
+    width: 32rem;
+    height: 100%;
+  }
+  .card__title {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 0.5rem;
+  }
+  .card__p {
+    line-height: 2.8rem;
+  }
+  .card__button {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--black);
+  }
+  .card__link {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    font-family: var(--heading-font);
+    letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  .card__link:hover {
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+  }
+</style>
