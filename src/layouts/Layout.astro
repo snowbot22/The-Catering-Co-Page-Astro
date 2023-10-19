@@ -76,6 +76,9 @@ const { title } = Astro.props;
 	.img--cover{
 		object-fit: cover;
 	}
+	.img--top{
+		object-position: top;
+	}
 
 	/* LIST */
 	.list--reset{
@@ -96,7 +99,7 @@ const { title } = Astro.props;
 		justify-content: center;
 		align-items: center;
 	}
-	.flex--rownowarp--reverse{
+	.flex--rownowrap--reverse{
 		display: flex;
 		flex-flow: row-reverse nowrap;
 	}
@@ -116,6 +119,12 @@ const { title } = Astro.props;
 	}
 	.color--white{
 		color: var(--white);
+	}
+	.bg--black{
+		background-color: var(--black);
+	}
+	.bg--white{
+		background-color: var(--white);
 	}
 
 	/* BUTTONS */

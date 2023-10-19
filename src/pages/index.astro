@@ -1,13 +1,165 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const name="Push me"
 ---
 
-<Layout title="Welcome to Astro.">
-	
+<Layout title="The Catering Co. || Organizadores y Catering de Eventos">
+    <article class="intro">
+        <section class="intro__text flex--colnowrap">
+            <p class="intro__subtext">
+                The Catering Co.
+            </p>
+            <h1 class="title intro__title" id="title">
+                Somos <br>
+                <span id="title--1">
+                    Organizadores de Eventos
+                </span>
+                <span id="title--2" class="hidden">
+                    Catering 
+                </span>
+                <span id="title--3" class="hidden">
+                    Wedding Planners
+                </span>
+            </h1>
+            <button class="button intro__button">
+                <a href="" class="link--reset intro__link">
+                    Conoce Más
+                </a>
+            </button>
+        </section>
+        <figure class="intro__figure">
+            <img class="img--large img--cover img--top" src="/index-3.png" alt="slider">
+        </figure>
+    </article>
+    <article>
+        <section>
+            <h2>
+                The Catering Co.
+            </h2>
+            <p>
+                Somos una empresa dedicada a la organización de eventos y catering, con más de 10 años de experiencia en el mercado. Nuestro objetivo es brindar un servicio de calidad, con un toque de elegancia y distinción, para que tu evento sea inolvidable.
+            </p>
+        </section>
+        <section>
+            
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2>
+                Somos Organizadores de Eventos
+            </h2>
+            <p>
+                Lorem ipsum dolor
+            </p>
+            <button>
+                Cotiza con nosotros
+            </button>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2>
+                Somos Catering
+            </h2>
+            <p>
+                Lorem ipsum dolor
+            </p>
+            <button>
+                Cotiza con nosotros
+            </button>
+        </section>
+    </article>
+    <article>
+
+    </article>
 </Layout>
 
 <style>
-	
+	.intro{
+        width: 100%;
+        height: clamp(65rem,80vh,70rem);
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .intro__text{
+        width: 100%;
+        height: 100%;
+        padding-left: 15rem;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        gap: 1rem;
+        grid-row: 1;
+        grid-column: 1/3;
+        z-index: 2;
+        color: var(--white);
+        background-color: #262626bb;
+        text-align: left;
+    }
+    .intro__title{
+        font-size: 5rem;
+        letter-spacing: .15rem;
+        line-height: 6.5rem;
+        height: 10rem;
+        margin-bottom: 4rem;
+    }
+    .intro__subtext{
+        font-size: 2rem;
+    }
+    .intro__button{
+        width: 14rem;
+        height: 5rem;
+        border: solid 1px var(--black);
+        border-radius: .5rem;
+    }
+    .intro__link{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .intro__figure{
+        height: 100%;
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .hidden{
+        display: none;
+        transition: all .3s ease-in-out;
+    }
 </style>
+
+
+<script>
+    let title = document.getElementById('title');
+    let text1 = document.getElementById('title--1');
+    let text2 = document.getElementById('title--2');
+    let text3 = document.getElementById('title--3');
+    
+    function pastText (){
+        setInterval(() => {
+            text1.classList.add('hidden');
+            text2.classList.remove('hidden');
+            text3.classList.add('hidden');
+        }, 3000);
+        setInterval(() => {
+            text2.classList.add('hidden');
+            text3.classList.remove('hidden');
+        }, 6000);
+        setInterval(() => {
+            text3.classList.add('hidden');
+            text2.classList.add('hidden');
+            text1.classList.remove('hidden');
+        }, 9000);
+    }
+    pastText();
+</script>

@@ -32,7 +32,7 @@ import Layout from "../layouts/Layout.astro";
         />
       </figure>
       <section class="card__text flex--colnowrap">
-        <h2 class="title card__title">Organización de Eventos Sociales</h2>
+        <h2 class="title card__title border--bottom--black">Organización de Eventos Sociales</h2>
         <p class="card__p">
           Desde la organización integral de tu evento, hasta el catering y
           ambientación, te acompañamos en cada momento para que puedas disfrutar
@@ -43,7 +43,7 @@ import Layout from "../layouts/Layout.astro";
         </button>
       </section>
     </article>
-    <article class="card flex--rownowrap">
+    <article class="card flex--rownowrap--reverse bg--black">
       <figure class="card__figure">
         <img
           class="img--large img--cover"
@@ -51,8 +51,8 @@ import Layout from "../layouts/Layout.astro";
           alt="foto-eventos-sociales"
         />
       </figure>
-      <section class="card__text flex--colnowrap">
-        <h2 class="card__title title">Organización de Eventos Empresariales</h2>
+      <section class="card__text flex--colnowrap color--white">
+        <h2 class="card__title title border--bottom--white">Organización de Eventos Empresariales</h2>
         <p class="card__p">
           Organizamos tu evento empresarial, para que puedas disfrutarlo y
           lograr tus objetivos.
@@ -71,7 +71,7 @@ import Layout from "../layouts/Layout.astro";
         />
       </figure>
       <section class="card__text flex--colnowrap">
-        <h2 class="title card__title">Servicio de Catering</h2>
+        <h2 class="title card__title border--bottom--black">Servicio de Catering</h2>
         <p class="card__p">
           Brindamos un servicio de catering de excelencia, con la mejor calidad
           y atención personalizada.
@@ -81,7 +81,7 @@ import Layout from "../layouts/Layout.astro";
         </button>
       </section>
     </article>
-    <article class="card flex--rownowrap">
+    <article class="card flex--rownowrap--reverse bg--black">
       <figure class="card__figure">
         <img
           class="img--large img--cover"
@@ -89,8 +89,8 @@ import Layout from "../layouts/Layout.astro";
           alt="foto-eventos-sociales"
         />
       </figure>
-      <section class="card__text flex--colnowrap">
-        <h2 class="title card__title">Wedding Planner</h2>
+      <section class="card__text flex--colnowrap color--white">
+        <h2 class="title card__title border--bottom--white">Wedding Planner</h2>
         <p class="card__p">
           Te acompañamos en la organización de tu casamiento, para que puedas
           disfrutar de cada momento.
@@ -109,7 +109,7 @@ import Layout from "../layouts/Layout.astro";
         />
       </figure>
       <section class="card__text flex--colnowrap">
-        <h2 class="title card__title">Rider y Catering de Conciertos</h2>
+        <h2 class="title card__title border--bottom--black">Rider y Catering de Conciertos</h2>
         <p class="card__p">
           Organizamos el catering de tu concierto, para que puedas disfrutarlo y
           lograr tus objetivos.
@@ -156,38 +156,35 @@ import Layout from "../layouts/Layout.astro";
     line-height: 2.8rem;
   }
   .container{
-    padding: 4rem;
-    justify-content: space-around;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center;
+    height: max-content;
   }
   .card {
-    width: max-content;
-    padding: 4rem 0;
-    height: 50rem;
+    width: 100%;
+    height: 45rem;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    flex-shrink: 1;
   }
   .card__text {
-    width: 25rem;
+    width: 50%;
     height: 100%;
+    padding: 4rem;
     gap: 1.8rem;
+    justify-content: center;
   }
   .card__figure {
-    width: 32rem;
+    width: 50%;
     height: 100%;
   }
   .card__title {
-    font-size: 2.5rem;
-    border-bottom: 2px solid var(--black);
-    padding-bottom: 0.5rem;
+    width: max-content;
+    max-width: 60rem;
+    font-size: 3.5rem;
+    padding: 0 2rem 1rem 0;
   }
   .card__p {
     line-height: 2.8rem;
+    font-size: 2rem;
+    max-width: 70rem;
   }
   .card__button {
     width: 10rem;
@@ -214,4 +211,5 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 700;
     transition: all 0.3s ease-in-out;
   }
+ 
 </style>
