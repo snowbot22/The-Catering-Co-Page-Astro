@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Form } from "../components/Form.jsx";
+import "../css/cotiza.css"
 ---
 
 <Layout title="Cotiza tu Evento">
@@ -17,28 +18,3 @@ import { Form } from "../components/Form.jsx";
     <Form client:visible />
   </main>
 </Layout>
-
-<style>
-  main {
-    padding: 6rem;
-  }
-  .container--text {
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: left;
-    gap: 2rem;
-    margin-bottom: 1rem;
-  }
-  .container__title {
-    padding-bottom: 1rem;
-    font-family: var(--heading-font);
-    font-size: 3rem;
-    letter-spacing: .15rem;
-    border-bottom: 3px solid var(--black);
-    width: clamp(40rem ,60%, 50rem);
-  }
-  .container__p{
-    line-height: 3.2rem;
-  }
-</style>

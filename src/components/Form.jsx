@@ -87,7 +87,8 @@ export const Form = () => {
                 <select className="container__input" name="tipoEvento" id="tipoEvento" {...register("tipoEvento",{required:"Este campo es requerido"})}>
                     <option value="">Elige el tipo de evento</option>
                     <option value="boda">Boda</option>
-                    <option value="bautizo">Bautizo</option>
+                    <option value="aniversario">Aniversario</option>
+                    <option value="brunch">Brunch</option>
                     <option value="eventoSocial">Evento Social</option>
                     <option value="eventoCorporativo">Evento Corporativo</option>
                     <option value="otro">Otro</option>
@@ -117,7 +118,7 @@ export const Form = () => {
             <button className="form__button" type="submit">
                 Enviar 
             </button>
-            {success && <span className="success">¡Formulario enviado exitosamente!</span>}
+            {success && <span className="success flex--rownowrap">¡Formulario enviado exitosamente!</span>}
         </form>
     )
 };

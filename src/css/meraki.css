@@ -1,0 +1,306 @@
+.intro{
+    height: max-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.intro__banner{
+    height: 35rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    background-image: url("/fondo-meraki1.png");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.intro__image{
+    width: 70rem;
+}
+.intro__text{
+    width: 80%;
+    max-width: 130rem;
+    gap: 2rem;
+}
+.intro__title{
+    width: max-content;
+    font-size: 4rem;
+    border-bottom: 2px solid var(--black);
+    padding: 0 3rem 0.4rem 0rem;
+}
+.intro__p{
+    font-weight: 400;
+}
+
+/*
+* LOCATION
+*/
+.location{
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+    padding: 4rem 0;
+}
+.location__video{
+    width: 65rem;
+    height: 40rem;
+    border: none;
+    border-radius: 1rem;
+}
+.location__button{
+    width: 20rem;
+    height: 5rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid var(--black);
+}
+.location__button a {
+    color: var(--black);
+    font-size: 2rem;
+}
+.location__button:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 
+* SERVICES
+*/
+.servicios{
+    width: 80%;
+    max-width: 130rem;
+    gap: 6rem;
+    margin: auto;
+}
+.servicios__title{
+    width: max-content;
+    font-size: 4rem;
+    border-bottom: 2px solid var(--black);
+    padding: 0 3rem 0.4rem 0rem;
+}
+.servicios__container{
+    gap: 7rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+.card{
+    gap: 1rem;
+    width: 35rem;
+    height: 40rem;
+}
+.card__text{
+    text-align: center;
+}
+.card__figure{
+    background-color: grey;
+    width: 100%;
+    height: 25rem;
+}
+.card__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card__p{
+    padding: 0 1rem ;
+    line-height: 2.6rem;
+}
+
+.contacto{
+    align-items: center;
+    gap: 2rem;
+}
+.contacto__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.contacto__container{
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__button{
+    width: 17rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 2px solid var(--black);
+    border-radius: 1rem;
+}
+.contacto__button a{
+    color: var(--black);
+    font-size: 2rem;
+}
+
+/*
+* BENEFICIOS
+*/
+.beneficios{
+    margin-top: 7rem;
+  }
+  .beneficios__title{
+    width: 80%;
+    max-width: 130rem;
+    margin: auto;
+  }
+  .beneficios__container{
+    justify-content: center;
+    gap: 12rem;
+  }
+  .beneficios__card{
+    gap: 2rem;
+    width: 30rem;
+    height: max-content;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .beneficios__figure{
+    width: 60%;
+    height: 16rem;
+    border-radius: 100%;
+    margin: auto;
+  }
+  .beneficios__title{
+    height: 12rem;
+    text-align: center;
+  }
+  .beneficios__subtitle{
+    text-align: center;
+    font-weight: normal;
+  }
+
+/* 
+* SLIDER
+*/
+.slider{
+    width: 50%;
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+    place-items: center;
+    margin: 8rem auto;
+}
+.slider2{
+     width: 50%;
+     height: 40rem;
+     display: grid;
+     grid-template-columns: 10% 80% 10%;
+     grid-template-rows: 100%;
+     place-items: center;
+     margin: 1rem auto;
+}
+.prev , .next{
+    grid-row: 1;     
+    width: 85%;
+    height: 7rem;
+    background-color: var(--black);
+    opacity: 0.90;
+    cursor: pointer;
+}
+.prev{
+    grid-column: 1;
+    z-index: 2;
+    margin-left: 1rem;
+}
+.next{
+    grid-column: 3;
+    z-index: 2;
+    margin-right: 1rem;
+}
+.slider__container{
+    z-index: 1;
+    grid-row: 1;
+    grid-column: 1/4;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(79, 82, 78, 0.226);
+}
+
+.slider__container .img{
+    width: 100%;
+    height: 100%;
+}
+.figure{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+* MEDIA
+*/
+@media (max-width: 1000px){
+    .slider2{
+        width: 100%;
+    }
+    .servicios{
+        width: 100%;
+        max-width: none;
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+    .intro__text{
+        width: 100%;
+        max-width: none;
+        gap: 2rem;
+        padding: 0 3rem;
+    }
+    .servicios__container{
+        gap: 12rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 7rem;
+    }
+    .slider{
+        width: 100%;
+    }
+    .contacto{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .beneficios__container{
+        gap: 6rem;
+      }
+}
+@media (max-width: 500px){
+    .intro__text{
+        width: 100%;
+        padding: 0 3rem;
+        max-width: 100%;
+        gap: 0rem;
+    }
+    .intro__title{
+        width: 100%;
+        font-size: 3rem;
+        border-bottom: none;
+        padding:0;
+        text-align: center;
+    }
+    .intro__p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .servicios__title{
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        border-bottom: none;
+        padding: 0;
+    }
+    .card{
+        padding: 1rem 0;
+        height: max-content;
+        margin: 0;
+    }
+    .servicios__container{
+        gap: 4rem;
+        margin: 0;
+    }
+    .contacto__container{
+        gap: 3rem;
+    }
+}

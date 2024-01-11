@@ -1,207 +1,243 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Slider } from "../components/Slider";
+import "../css/meraki.css";
 ---
 
 <Layout title="Meraki Brunch & Events">
-  <article class="intro">
-    <section class="intro__text flex--colnowrap">
-      <figure class="intro__figure">
-        <img
-          class="img--large"
-          src="/logo-meraki-sf-blanco.svg"
-          alt="meraki-logo"
-        />
+  <article class="flex--colnowrap intro">
+    <div class="intro__banner flex--rownowrap">
+      <figure class="intro__image">
+        <img class="img--large" src="/logo-meraki-blue.svg" alt="foto">
       </figure>
-      <h1 class="intro__title title">Quinta para eventos</h1>
-      <p class="intro__p">
-        En Meraki Brunch & Events, tus eventos se transforma en experiencias
-        inolvidables. Desde bodas mágicas hasta fiestas de ensueño, aquí todo
-        momento se convierte en una obra maestra.
-      </p>
-    </section>
-    <Slider client:visible />
-  </article>
-  <article class="card">
-    <figure class="card__figure">
-      <img class="img--large img--cover" src="/brunch.jpg" alt="brunch">
-    </figure>
-    <section class="card__text">
-      <h2 class="title card__title border--bottom--black">
-        Brunch 
-      </h2>
-      <p class="card__p">
-        Disfruta de un brunch en un ambiente natural y acogedor, con una
-        variedad de platos dulces y salados, nos acomodamos 
-        a tus gustos y necesidades.
+    </div>
+    <section class="flex--colnowrap intro__text">
+      <h1 class="title intro__title">
+        Quinta para eventos
+      </h1>
+      <p class="text intro__p">
+        Meraki Brunch & Events es un espacio único con amplias áreas verdes, con una vista espectacular y un ambiente acogedor. <br>
+        Ideal para todos tus celebraciones, contamos con todas las comodidades para que tu y tus invitados disfruten de un día inolvidable. 
+        Contamos con un equipo de profesionales que te ayudarán a organizar tu evento y que todo salga perfecto.
+        Explora todos los servicios y comodidades que Meraki Brunch & Events tiene para ti.
       </p>
     </section>
   </article>
-  <article class="card flex--rownowrap bg--black">
-    <section class="card__text card__text--salon">
-      <h2 class="title card__title border--bottom--white">
-        Salón de Eventos
-      </h2>
-      <p class="card__p">
-        Disponemos de un salón de eventos para eventos más íntimos, donde podrás
-        disfrutar de un ambiente acogedor y elegante. 
-      </p>
-    </section>
-    <figure class="card__figure"> 
-      <img class="img--large img--cover" src="/salon.jfif" alt="salon-de-eventos">
-    </figure>
+  <article class="flex--colnowrap location">
+    
+    <div class="slider2">
+      <figure class="prev" id="previous2">
+          <img class="img--large" src="/arrow-prev.svg" alt="icono atras">
+      </figure>
+  
+      <div class="slider__container">
+          <figure class="figure">
+              <img class="img--large img--contain" name="slider2">
+          </figure>
+      </div>
+  
+      <figure class="next" id="next2">
+          <img class="img--large" src="/arrow-next.svg" alt="icono siguiente">
+      </figure>
+  </div>
+    <button class="button location__button">
+      <a class="link--reset" href="https://maps.app.goo.gl/4j4w34ww5TXDWi5S9" target="_blank">
+        Ver ubicación
+      </a>
+    </button>
   </article>
-  <article class="location flex--colnowrap">
-    <h2 class="location__title title">
-      Todo lo que necesitas para tu evento en el Valle de los Chillos
+  <article class="flex--colnowrap servicios">
+    <h2 class="title servicios__title">
+      Servicios
     </h2>
-    <p class="location__p">
-      Nos ubicamos en el Valle de los Chillos, a 20 minutos de Quito, en un
-      lugar rodeado de naturaleza y con un clima privilegiado. Contamos con
-      amplias áreas verdes para complementar el ambiente de tu día especial.
-    </p>
-    <button class="button location__button"> Ver en el Mapa</button>
+    <article class="flex--rowwrap servicios__container">
+      <section class="flex--colnowrap card">
+        <figure class="card__figure">
+          <img class="img--large img--cover" src="/stock-7.jpg" alt="foto">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title">
+            Eventos Sociales
+          </h3>
+          <p class="card__p">
+            Celebra tus días especiales con nosotros, tenemos todo lo que necesitas para que tu evento sea inolvidable.<br>
+            Nos encargamos de tu boda, cumpleaños, aniversarios, cumpleaños, y más.
+          </p>
+        </div>
+      </section>
+      <section class="flex--colnowrap card">
+        <figure class="card__figure">
+          <img class="img--large img--cover" src="/stock-5.jpg" alt="foto">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title">
+            Eventos Corporativos
+          </h3>
+          <p class="card__p">
+            Celebra tus eventos corporativos en un ambiente natural y relajante, con todas las comodidades que necesitas.<br>
+            Nos encargamos de tus agasajos, capacitaciones, reuniones, lanzamientos de productos y más.
+          </p>
+        </div>
+      </section>
+      <section class="flex--colnowrap card">
+        <figure class="card__figure">
+          <img class="img--large img--cover" src="/stock-6.jpg" alt="foto">
+        </figure>
+        <div class="card__text">
+          <h3 class="card__title">
+            Brunch
+          </h3>
+          <p class="card__p">
+            Disfruta de un delicioso brunch, con una variedad de platos y bebidas para todos los gustos.
+            Todo con la garantiá de que nuestros productos son de la mejor calidad y frescura.
+          </p>
+        </div>
+      </section>
+    </article>
+    <section class="flex--colnowrap contacto">
+      <p class="contacto__title">
+        Contáctanos ahora y hagamos de tu evento un día inolvidable.
+      </p>
+      <div class="flex--rowwrap contacto__container">
+        <button class="button contacto__button">
+          <a class="link--reset button__link" href="https://api.whatsapp.com/send/?phone=593982555079&text&type=phone_number&app_absent=0" target="_blank">
+            Escribenos
+          </a>
+        </button>
+        <button class="button contacto__button ">
+          <a class="link--reset button__link" href="/cotiza">
+            Cotiza ahora
+          </a>
+        </button>
+      </div>
+    </section>
   </article>
-  <article class="gallery">
-    <figure class="figure--1">
-      <img src="/g--3.jpg" alt="img" class="img--large img--cover" />
+  <article class="flex--colnowrap beneficios">
+    <section class="beneficios__title">
+      <h2 class="intro__title title">
+        ¿Por qué elegirnos?
+      </h2>
+    </section>
+    <section class="flex--rowwrap beneficios__container">
+      <div class="flex--colnowrap beneficios__card">
+        <figure class="beneficios__figure">
+          <img class="img--large" src="/nature-icon.svg" alt="icono de una casa">
+        </figure>
+        <h3 class="beneficios__subtitle">
+          Espacio natural y acogedor para todos tus invitados.  
+        </h3>
+      </div>
+      <div class="flex--colnowrap beneficios__card">
+        <figure class="beneficios__figure">
+          <img class="img--large" src="/people-icon.svg" alt="icono de personas">
+        </figure>
+        <h3 class="beneficios__subtitle">
+          Servicio de Event Planner para que tu evento sea perfecto.
+        </h3>
+      </div>
+      <div class="flex--colnowrap beneficios__card">
+        <figure class="beneficios__figure">
+          <img class="img--large" src="/food-icon.svg" alt="icono de un mesero">
+        </figure>
+        <h3 class="beneficios__subtitle">
+          Personal capacitado para atender a todos tus invitados.
+        </h3>
+      </div>
+    </section>
+  </article> 
+  <div class="slider">
+    <figure class="prev" id="previous">
+        <img class="img--large" src="/arrow-prev.svg" alt="icono atras">
     </figure>
-    <figure class="figure--2">
-      <img src="/g--1.jfif" alt="img" class="img--large img--cover" />
+
+    <div class="slider__container">
+        <figure class="figure">
+            <img class="img--large img--contain" name="slider">
+        </figure>
+        
+    </div>
+
+    <figure class="next" id="next">
+        <img class="img--large" src="/arrow-next.svg" alt="icono siguiente">
     </figure>
-    <figure class="figure--3">
-      <img src="g--2.jpg" alt="img" class="img--large img--cover" />
-    </figure>
-    <figure class="figure--4">
-      <img src="g--4.jpg" alt="img" class="img--large img--cover" />
-    </figure>
-  </article>
+</div>
 </Layout>
 
-<style>
-  .intro {
-    height: 60rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: var(--black);
-    color: var(--white);
-  }
-  .intro__text {
-    padding: 4rem;
-    justify-content: center;
-    gap: 3rem;
-  }
-  .intro__title {
-    width: 75%;
-    font-size: 3rem;
-    border-bottom: 1px solid var(--white);
-    padding: 0 0 1rem;
-  }
-  .intro__figure {
-    width: 45rem;
-  }
-  .intro__p {
-    line-height: 3rem;
-    font-size: 1.8rem;
-  }
-  .location {
-    height: 55rem;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-  }
-  .title {
-    font-family: var(--heading-font);
-    letter-spacing: 0.1rem;
-    font-weight: 700;
-  }
-  .location__title {
-    font-size: 4rem;
-  }
-  .location__p {
-    width: 60%;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 3rem;
-  }
-  .location__button {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-  .location__button:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
-  }
-  .gallery {
-    margin: 0 auto;
-    display: grid;
-    width: 100%;
-    padding: 4rem;
-    height: 82rem;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
-    align-items: center;
-    background-color: var(--black);
-  }
-  .gallery figure {
-    width: 100%;
-    height: 100%;
-  }
-  .figure--1 {
-    grid-column: 1/3;
-    grid-row: 1 / 4;
-  }
-  .figure--2 {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .figure--3 {
-    grid-column: 4;
-    grid-row: 1;
-  }
-  .figure--4 {
-    grid-column: 3/5;
-    grid-row: 2/5;
-  }
-  .card{
-    display: flex;
-    flex-flow: row nowrap;
-    height: 40rem;
-  }
-  .bg--black{
-    background-color: var(--black);
-  }
-  .card__figure{
-    width: 50%;
-    height: 100%;
-  }
-  .card__text{
-    height: 100%;
-    width: 50%;
-    padding: 4rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-  .card__text--salon{
-    color: var(--white);
-  }
-  .card__title{
-    font-size: 4rem;
-    letter-spacing: .15rem;
-    padding-bottom: 1rem;
-  }
-  .card__p{
-    font-size: 2rem;
-    line-height: 3rem;
-    width: 75%;
-  }
 
-</style>
+<script>
+ let images = [
+       "/s-10.jpg",
+       "/s-13.jpg",
+       "/s-14.jpg",
+       "/s-11.jpg",
+       "/s-15.jpg",
+       "/s-12.jpg",
+   ]
+
+   document.slider.src=images[0]
+
+   let prev= document.getElementById("previous");
+   let next= document.getElementById("next");
+   let contador=0;
+
+   function atras (){
+       contador--
+       if(contador<0){
+           contador=images.length-1
+       }
+       document.slider.src=images[contador]
+
+   }
+
+
+   function adelante (){
+       contador++
+       if(contador > images.length - 1){
+           contador=0
+       }
+       document.slider.src=images[contador]
+   }
+
+   prev.addEventListener("click",atras)
+   next.addEventListener("click",adelante)
+
+
+   let images2 = [
+       "/s-16.jpg",
+       "/s-17.jpg",
+       "/s-18.jpg",
+       "/s-19.jpg",
+       "/s-20.jpg",
+       "/s-21.jpg",
+       "/s-22.jpg",
+       "/s-24.jpg",
+   ]
+
+    document.slider2.src=images2[0]
+
+    let prev2= document.getElementById("previous2");
+    let next2= document.getElementById("next2");
+    let contador2=0;
+
+    function atras2 (){
+        contador2--
+        if(contador2<0){
+            contador2=images2.length-1
+        }
+        document.slider2.src=images2[contador2]
+
+    }
+
+    function adelante2 (){
+        contador2++
+        if(contador2 > images2.length - 1){
+            contador2=0
+        }
+        document.slider2.src=images2[contador2]
+    }
+
+    prev2.addEventListener("click",atras2)
+    next2.addEventListener("click",adelante2)
+
+</script>
+
+

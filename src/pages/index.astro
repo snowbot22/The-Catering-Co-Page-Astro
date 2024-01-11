@@ -1,165 +1,212 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '../css/index.css';
 
 ---
 
 <Layout title="The Catering Co. || Organizadores y Catering de Eventos">
-    <article class="intro">
-        <section class="intro__text flex--colnowrap">
-            <p class="intro__subtext">
-                The Catering Co.
+    <article class="intro flex--rownowrap">
+                <section class="intro__text flex--colnowrap">
+                    <p class="intro__subtext">
+                        The Catering Co.
+                    </p>
+                    <h1 class="title intro__title" id="title">
+                        Somos <br>
+                        <span id="title--1">
+                            Planificadores de Eventos
+                        </span>
+                        <span id="title--2" class="hidden">
+                            Diseñadores de Eventos  
+                        </span>
+                        <span id="title--3" class="hidden">
+                            Catering
+                        </span>
+                    </h1>
+                    <button class="button intro__button">
+                        <a href="/servicios" class="link--reset intro__link">
+                            Conoce Más
+                        </a>
+                    </button>
+                </section>
+            <picture class="intro__image">
+                <source class="img--large img--cover" media="(min-width: 1000px)" srcset="/index-1.2.jpg">
+                <img class="img--large img--cover" src="/index-2.jpg" alt="foto de una pareja">
+            </picture>
+    </article>
+    <article class="eventos flex--rownowrap">
+        <section class="eventos__text flex--colnowrap">
+            <h2 class="title eventos__title">
+                Organizadores de eventos en Quito 
+            </h2>
+            <p class="text">
+                Sabemos lo estresante que puede ser organizar un evento, desde la idea hasta la ejecución del mismo.
+                Es por eso que en estos más de 10 años de experiencia, nos hemos especializado a acompañarte en todo el camino hasta tu día especial.
             </p>
-            <h1 class="title intro__title" id="title">
-                Somos <br>
-                <span id="title--1">
-                    Organizadores de Eventos
-                </span>
-                <span id="title--2" class="hidden">
-                    Catering 
-                </span>
-                <span id="title--3" class="hidden">
-                    Wedding Planners
-                </span>
-            </h1>
-            <button class="button intro__button">
-                <a href="" class="link--reset intro__link">
-                    Conoce Más
+            <p class="eventos__subtitle">
+                Contáctanos y Organizemos juntos tu evento.
+            </p>
+            <button class="button eventos__button">
+                <a href="/cotiza" class="button__link link--reset color--white">
+                    Cotiza con nosotros
                 </a>
             </button>
         </section>
-        <figure class="intro__figure">
-            <img class="img--large img--cover img--top" src="/index-3.png" alt="slider">
+        <figure class="eventos__figure"> 
+            <img class="img--large img--cover" src="/g--3.jpg" alt="arreglo de flores">
         </figure>
     </article>
-    <article>
-        <section>
-            <h2>
-                The Catering Co.
+    <article class="servicios flex--rownowrap">
+        <div class="slider">
+            <figure class="prev" id="previous">
+                <img class="img--large" src="/arrow-prev.svg" alt="icono atras">
+            </figure>
+        
+            <div class="slider__container">
+                <figure class="figure">
+                    <img class="img--large img--contain" name="slider">
+                </figure>
+            </div>
+        
+            <figure class="next" id="next">
+                <img class="img--large" src="/arrow-next.svg" alt="icono siguiente">
+            </figure>
+        </div>
+        <section class="servicios__text flex--colnowrap">
+            <h2 class="servicios__title">
+                La satisfacción y alegría de nuestros clientes son el fiel reflejo de nuestro compromiso y calidad
             </h2>
-            <p>
-                Somos una empresa dedicada a la organización de eventos y catering, con más de 10 años de experiencia en el mercado. Nuestro objetivo es brindar un servicio de calidad, con un toque de elegancia y distinción, para que tu evento sea inolvidable.
+            <p class="servicios__p">
+                En The Catering Co. nuestra mejor carta de presentación son nuestros clientes satisfechos. Te presentamos una lista de nuestros servicios.
             </p>
-        </section>
-        <section>
-            
-        </section>
-    </article>
-    <article>
-        <section>
-            <h2>
-                Somos Organizadores de Eventos
-            </h2>
-            <p>
-                Lorem ipsum dolor
-            </p>
-            <button>
-                Cotiza con nosotros
-            </button>
-        </section>
-    </article>
-    <article>
-        <section>
-            <h2>
-                Somos Catering
-            </h2>
-            <p>
-                Lorem ipsum dolor
-            </p>
-            <button>
-                Cotiza con nosotros
-            </button>
-        </section>
-    </article>
-    <article>
+            <ul class="servicios__list">
+                <li>
+                    <p>
+                        Eventos Sociales
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Eventos Corporativos
+                    </p>
+                </li>
+                <li>
+                    <figure>
 
+                    </figure>
+                    <p>
+                        Catering
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Y mucho más
+                    </p>
+                </li>
+            </ul>
+            <button class="button servicios__button">
+                <a href="/servicios" class="link--reset button__link">
+                    Conoce más
+                </a>
+            </button>
+        </section>
+    </article>
+    <article class="meraki flex--colnowrap">
+        <figure class="meraki__banner">
+            <img class="img--large img--cover img--bottom" src="/stock-2.jpg" alt="">
+        </figure>    
+        <section class="meraki__text flex--colnowrap">
+            <figure class="meraki__logo">
+                <img class="img--large" src="/logo-meraki-sf--negro.png" alt="logo-meraki">
+            </figure>
+            <p class="text meraki__p">
+                El escenario para un gran evento es crucial, es por esto que ponemos a tu disposición la quinta Meraki.
+                Un exclusivo lugar con amplias áreas verdes y una vista espectacular ubicada en el Valle de los Chillos, donde podrás celebrar 
+                los momentos más especiales de tu vida. Acompañado por nuestros Event Planners, la planificación de tu evento será más llevadero y disfrutable.
+            </p>
+            <p class="meraki__subtitle">
+                Nuestro compromiso es convertir cada evento en un momento extraordinario y memorable.
+            </p>
+            <button class="button button--white">
+                <a class="link--reset button__link color--black" href="/meraki">
+                    Conoce más
+                </a>
+            </button>
+        </section>
+    </article>
+    <article class="social flex--rownowrap">
+        <figure class="social__banner">
+            <img class="img--large img--cover" src="index-3.png" alt="pastel con un letrero">
+        </figure>
+        <section class="social__text flex--colnowrap">
+            <p class="social__title">
+                Siguenos en nuestras redes sociales y enterate de nuestras promociones y eventos.
+            </p>
+            <section class="social__container flex--rowwrap">
+                <button class="button social__button">
+                    <a class="link--reset button__link" href="https://www.instagram.com/thecatering.co/?hl=es" target="_blank">
+                        Instagram
+                    </a>
+                </button>
+                <button class="button social__button">
+                    <a class="link--reset button__link" href="https://www.facebook.com/TheCateringCoQuito" target="_blank">
+                        Facebook
+                    </a>
+                </button>
+            </section>
+        </section>
     </article>
 </Layout>
 
-<style>
-	.intro{
-        width: 100%;
-        height: clamp(65rem,80vh,70rem);
-        display: grid;
-        grid-template-columns: 45% 55%;
-        grid-template-rows: 100%;
-        align-items: center;
-        justify-items: center;
-    }
-    .intro__text{
-        width: 100%;
-        height: 100%;
-        padding-left: 15rem;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-        gap: 1rem;
-        grid-row: 1;
-        grid-column: 1/3;
-        z-index: 2;
-        color: var(--white);
-        background-color: #262626bb;
-        text-align: left;
-    }
-    .intro__title{
-        font-size: 5rem;
-        letter-spacing: .15rem;
-        line-height: 6.5rem;
-        height: 10rem;
-        margin-bottom: 4rem;
-    }
-    .intro__subtext{
-        font-size: 2rem;
-    }
-    .intro__button{
-        width: 14rem;
-        height: 5rem;
-        border: solid 1px var(--black);
-        border-radius: .5rem;
-    }
-    .intro__link{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        color: var(--black);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8rem;
-    }
-    .intro__figure{
-        height: 100%;
-        width: 100%;
-        grid-column: 1/3;
-        grid-row: 1;
-    }
-    .hidden{
-        display: none;
-        transition: all .3s ease-in-out;
-    }
-</style>
-
 
 <script>
-    let title = document.getElementById('title');
-    let text1 = document.getElementById('title--1');
-    let text2 = document.getElementById('title--2');
-    let text3 = document.getElementById('title--3');
-    
-    function pastText (){
+    let texts = ['title--1', 'title--2', 'title--3'].map(id => document.getElementById(id));
+
+    function pastText() {
+        let index = 0;
         setInterval(() => {
-            text1.classList.add('hidden');
-            text2.classList.remove('hidden');
-            text3.classList.add('hidden');
+            texts.forEach((text, i) => {
+                if (i === index) {
+                    text.classList.remove('hidden');
+                } else {
+                    text.classList.add('hidden');
+                }
+            });
+            index = (index + 1) % texts.length;
         }, 3000);
-        setInterval(() => {
-            text2.classList.add('hidden');
-            text3.classList.remove('hidden');
-        }, 6000);
-        setInterval(() => {
-            text3.classList.add('hidden');
-            text2.classList.add('hidden');
-            text1.classList.remove('hidden');
-        }, 9000);
     }
+
     pastText();
+
+    let images = [
+        "/s-1.jpg",
+        "/s-2.jpg",
+        "/s-3.jpg",
+        "/s-4.jpg",
+    ]
+
+    document.slider.src=images[0]
+
+    let prev= document.getElementById("previous");
+    let next= document.getElementById("next");
+    let contador=0;
+
+    function atras (){
+        contador--
+        if(contador<0){
+            contador=images.length-1
+        }
+        document.slider.src=images[contador]
+
+    }
+
+    function adelante (){
+        contador++
+        if(contador > images.length - 1){
+            contador=0
+        }
+        document.slider.src=images[contador]
+    }
+
+    prev.addEventListener("click",atras)
+    next.addEventListener("click",adelante)
 </script>
