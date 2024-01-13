@@ -183,6 +183,12 @@ import '../css/index.css';
         "/The-Catering-Co-Page-Astro/s-3.jpg",
         "/The-Catering-Co-Page-Astro/s-4.jpg",
     ]
+    let alt= [
+        "imagen de un evento",
+        "imagen de un evento",
+        "imagen de un evento",
+        "imagen de un evento",
+    ]
 
     document.slider.src=images[0]
 
@@ -196,7 +202,7 @@ import '../css/index.css';
             contador=images.length-1
         }
         document.slider.src=images[contador]
-
+        document.slider.alt=alt[contador]
     }
 
     function adelante (){
@@ -205,6 +211,7 @@ import '../css/index.css';
             contador=0
         }
         document.slider.src=images[contador]
+        document.slider.alt=alt[contador]
     }
 
     prev.addEventListener("click",atras)

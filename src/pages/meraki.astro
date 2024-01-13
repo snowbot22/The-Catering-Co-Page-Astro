@@ -172,6 +172,14 @@ import "../css/meraki.css";
        "/The-Catering-Co-Page-Astro/s-15.jpg",
        "/The-Catering-Co-Page-Astro/s-12.jpg",
    ]
+  let alt = [
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+  ]
 
    document.slider.src=images[0]
 
@@ -185,6 +193,7 @@ import "../css/meraki.css";
            contador=images.length-1
        }
        document.slider.src=images[contador]
+       document.slider.alt=alt[contador]
 
    }
 
@@ -195,6 +204,7 @@ import "../css/meraki.css";
            contador=0
        }
        document.slider.src=images[contador]
+       document.slider.alt=alt[contador]
    }
 
    prev.addEventListener("click",atras)
@@ -211,6 +221,16 @@ import "../css/meraki.css";
        "/The-Catering-Co-Page-Astro/s-22.jpg",
        "/The-Catering-Co-Page-Astro/s-24.jpg",
    ]
+   let alt2 = [
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+    "foto",
+    "foto", 
+  ]
 
     document.slider2.src=images2[0]
 
@@ -224,6 +244,7 @@ import "../css/meraki.css";
             contador2=images2.length-1
         }
         document.slider2.src=images2[contador2]
+        document.slider2.alt=alt2[contador2]
 
     }
 
@@ -233,6 +254,7 @@ import "../css/meraki.css";
             contador2=0
         }
         document.slider2.src=images2[contador2]
+        document.slider2.alt=alt2[contador2]
     }
 
     prev2.addEventListener("click",atras2)
