@@ -12,15 +12,12 @@ main {
   .container__title {
     padding-bottom: 1rem;
     font-family: var(--heading-font);
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: .15rem;
-    border-bottom: 3px solid var(--black);
-    width: clamp(40rem ,60%, 50rem);
   }
   .container__p{
     line-height: 3.2rem;
   }
-
 /*
 * MEDIA
 */

@@ -104,6 +104,10 @@
   .color--white {
     color: var(--white);
   }
+  .color--red {
+    color: red;
+    font-size: 1.9rem;
+  }
   .bg--black {
     background-color: var(--black);
   }

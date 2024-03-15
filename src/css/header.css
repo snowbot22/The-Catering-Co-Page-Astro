@@ -28,10 +28,6 @@ header{
     gap: 4rem;
     position: relative;
 }
-.nav--desktop__list li:hover{
-    border-bottom: 1px solid var(--black);
-    transition: all 0.3s ease-in-out;
-}
 .nav--desktop__icons{
     height: 100%;
     align-items: center;
